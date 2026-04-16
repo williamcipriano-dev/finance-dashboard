@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b1736;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* TOPO */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+/* CARDS */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #1b2948;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.card h3 {
+  color: #94a3b8;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* FILTROS */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #1b2948;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+/* LISTA */
+.list {
+  background: #1b2948;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+/* GRÁFICO */
+.chart-box {
+  margin-top: 30px;
+  background: #1b2948;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.chart-box h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .summary {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+.footer {
+  margin-top: 50px;
+  padding: 35px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.footer span {
+  color: #94a3b8;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #94a3b8;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+  transform: translateY(-2px);
+}
