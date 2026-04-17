@@ -116,18 +116,57 @@ button:hover {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  .summary {
-    grid-template-columns: 1fr;
+  .container {
+    padding: 20px 14px;
   }
 
   .top-bar {
     flex-direction: column;
-    gap: 20px;
     align-items: flex-start;
+    gap: 15px;
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .summary {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+  }
+
+  button {
+    flex: 1;
+    min-width: 90px;
+  }
+
+  .card p {
+    font-size: 26px;
+  }
+
+  .chart-box {
+    padding: 15px;
+  }
+
+  .chart-box h2 {
+    font-size: 22px;
+  }
+
+  .footer {
+    padding: 25px 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 .footer {
